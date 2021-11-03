@@ -5,6 +5,6 @@ import com.intuit.karate.junit4.Karate;
 import org.junit.runner.RunWith;
 
 @RunWith(Karate.class)
-@KarateOptions(features = "classpath:restfulbooker/updatebooking/updateBooking.feature")
+@KarateOptions(features = "classpath:restfulbooker/features/updateBooking.feature")
 public class updateBookingRunner {
 }

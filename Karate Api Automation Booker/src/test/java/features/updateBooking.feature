@@ -8,7 +8,7 @@ Feature: UPDATE BOOKING
     * header Accept = 'application/json'
 
     Scenario:Verify correct request to update a reservation receive 200
-      * def createTokenReponse = call read('classpath:common/createToken.feature')
+      * def createTokenReponse = call read('classpath:helper/createToken.feature')
       * def accessToken = createTokenReponse.response.token
       Given path '/booking/' + 9
       * cookie token = accessToken

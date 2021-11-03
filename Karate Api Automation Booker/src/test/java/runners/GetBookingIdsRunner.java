@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Karate.class)
-@KarateOptions(features = "classpath:restfulbooker/getbookingIds/GetBookingIds.feature")
+@KarateOptions(features = "classpath:restfulbooker/features/GetBookingIds.feature")
 public class GetBookingIdsRunner {
 
 }
