@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"partialUpdateBooking[1:11]","start":1259,"end":1259,"title":"partialUpdateBooking[1:11] 02:00:01.259-02:00:01.259 Verify correct request to partially update a reservation receive 200"},{"id":2,"group":1,"content":"createBooking[1:8]","start":1403,"end":1403,"title":"createBooking[1:8] 02:00:01.403-02:00:01.403 Verify correct request to create a reservation receive 200"},{"id":3,"group":1,"content":"updateBooking[1:10]","start":1418,"end":1418,"title":"updateBooking[1:10] 02:00:01.418-02:00:01.418 Verify correct request to update a reservation receive 200"},{"id":4,"group":1,"content":"deleteBooking[1:9]","start":1434,"end":1434,"title":"deleteBooking[1:9] 02:00:01.434-02:00:01.434 Verify correct request to delete a reservation receive 201"},{"id":5,"group":1,"content":"createToken[1:8]","start":1454,"end":1454,"title":"createToken[1:8] 02:00:01.454-02:00:01.454 Verify that when sending the request with the correct username and password, you receive cod 200"},{"id":6,"group":1,"content":"healthCheck[1:8]","start":1468,"end":1468,"title":"healthCheck[1:8] 02:00:01.468-02:00:01.468 Verify correct request to check the status of the service receive 201"},{"id":7,"group":1,"content":"GetBookingIds[1:9]","start":1477,"end":1477,"title":"GetBookingIds[1:9] 02:00:01.477-02:00:01.477 Validate that when making a request we obtain all the booking IDs"},{"id":8,"group":1,"content":"getBooking[1:8]","start":1494,"end":1494,"title":"getBooking[1:8] 02:00:01.494-02:00:01.494 Verify correct request with a reservation id receive cod 200"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

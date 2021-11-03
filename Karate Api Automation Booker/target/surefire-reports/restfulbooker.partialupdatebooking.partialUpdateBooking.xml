@@ -1,0 +1,9 @@
+<testsuite failures="1" name="restfulbooker/partialupdatebooking/partialUpdateBooking.feature" skipped="0" tests="1" time="0">
+  <testcase classname="restfulbooker.partialupdatebooking.partialUpdateBooking" name="Verify correct request to partially update a reservation receive 200" time="0">
+    <failure message="partialUpdateBooking.feature:11 - failed to construct class by name: karate-http.properties not found, aborting">* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: partialUpdateBooking.feature:11 - failed to construct class by name: karate-http.properties not found, aborting
+	at ✽.* scenario init failed (partialUpdateBooking.feature:11)</failure>
+  </testcase>
+</testsuite>

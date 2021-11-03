@@ -1,0 +1,9 @@
+<testsuite failures="1" name="restfulbooker/getbooking/getBooking.feature" skipped="0" tests="1" time="0">
+  <testcase classname="restfulbooker.getbooking.getBooking" name="Verify correct request with a reservation id receive cod 200" time="0">
+    <failure message="getBooking.feature:8 - failed to construct class by name: karate-http.properties not found, aborting">* scenario init failed .................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: getBooking.feature:8 - failed to construct class by name: karate-http.properties not found, aborting
+	at ✽.* scenario init failed (getBooking.feature:8)</failure>
+  </testcase>
+</testsuite>
