@@ -6,6 +6,6 @@ import com.intuit.karate.junit4.Karate;
 import org.junit.runner.RunWith;
 
 @RunWith(Karate.class)
-@KarateOptions(features = "classpath:restfulbooker/createtoken/createToken.feature")
+@KarateOptions(features = "classpath:restfulbooker/features/createToken.feature")
 public class createTokenRunner {
 }

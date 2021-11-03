@@ -16,7 +16,7 @@ import org.apache.commons.io.FileUtils;
 public class TestRunner{
     @Test
     public void TestRunner(){
-        Results results = Runner.path("classpath:restfulbooker").tags("~@ignore").parallel(1);
+        Results results = Runner.path("classpath:features").tags("~@ignore").parallel(1);
         generateReport(results.getReportDir());
     }
         public static void generateReport(String karateOutputPath){

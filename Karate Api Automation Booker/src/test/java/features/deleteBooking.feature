@@ -7,8 +7,8 @@ Feature: delete booking
     * header Context-Type = 'appliction/json'
   @HappyPath
     Scenario: Verify correct request to delete a reservation receive 201
-      * def createTokenReponse = call read('classpath:common/createToken.feature')
-      * def createBookingReponse = call read('classpath:common/createBooking.feature')
+      * def createTokenReponse = call read('classpath:helper/createToken.feature')
+      * def createBookingReponse = call read('classpath:helper/createBooking.feature')
       * def accessToken = createTokenReponse.response.token
       * def bookingId = createBookingReponse.response.bookingid
       Given path '/booking/' + bookingId
